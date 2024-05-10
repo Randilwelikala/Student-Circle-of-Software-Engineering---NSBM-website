@@ -27,10 +27,7 @@
 
     <main>
         <section id="intro" class="sec1">
-            <div id="dynamic-image">
-                <!-- Initial image -->
-                <img src="Images/Selections.jpg" alt="Initial Image">
-            </div>
+            
             <h1>Welcome to "The Game"</h1>
             <p>Introduce the event here...</p>
         </section>
@@ -61,24 +58,16 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    // Select the dynamic image container
-    const dynamicImage = document.getElementById("dynamic-image");
-
-    // Detect scroll event
-    window.addEventListener("scroll", function() {
-        // Calculate the scroll percentage
-        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-
-        // Calculate the degree of rotation based on the scroll percentage
-        const rotation = (scrollPercentage / 100) * 90; // Change the 90 to adjust the maximum rotation angle
-
-        // Apply rotation to the image
-        dynamicImage.style.transform = `rotate(${rotation}deg)`;
-    });
-});
-
-
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var section = document.getElementById('intro');
+            if (scrollPosition > 100) {
+                section.style.backgroundImage = "url('Images/new-background.jpg')";
+            } else {
+                section.style.backgroundImage = "url('Images/Selections.jpg')";
+            }
+        });
     </script>
+
 </body>
 </html>
