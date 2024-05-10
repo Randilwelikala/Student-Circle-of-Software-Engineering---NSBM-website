@@ -1,0 +1,82 @@
+.sec1 {
+    background-color: #0074D9; /* Blue background color for the intro section */
+    color: #fff; /* White text color */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.sec2 {
+    background-color: #555; /* Gray background color for the timelines section */
+    color: #fff; /* White text color */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.sec3 {
+    background-color: #2ECC40; /* Green background color for the guidelines section */
+    color: #fff; /* White text color */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.sec4 {
+    background-color: #FFDC00; /* Yellow background color for the partners section */
+    color: #000; /* Black text color */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.sec5 {
+    background-color: #FF851B; /* Orange background color for the contact section */
+    color: #fff; /* White text color */
+    padding: 50px; /* Add padding for spacing */
+}
+
+.navbar {
+    background-color: #333; /* Dark background color for the navbar */
+    padding: 20px 0; /* Add some padding to the top and bottom */
+}
+
+.container {
+    max-width: 1200px; /* Set a max-width for the container to center the navbar */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff; /* White text color for the logo */
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline; /* Display list items inline */
+    margin-left: 20px; /* Add margin between each link */
+}
+
+.nav-links li a {
+    color: #fff; /* White text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding to the links */
+    border-radius: 5px; /* Add some rounded corners */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.nav-links li a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+
+#dynamic-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Set the height of the image container */
+}
+
+#dynamic-image img {
+    width: 100%;
+    transition: transform 0.3s ease; /* Add smooth transition for image change */
+}
