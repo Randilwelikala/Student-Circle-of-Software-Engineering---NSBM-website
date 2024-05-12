@@ -3,6 +3,10 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+.logo img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
 
 @media only screen and (max-width: 768px) {
     .sec2, .sec3, .sec4, .sec5 {
