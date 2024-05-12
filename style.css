@@ -12,6 +12,22 @@ body, html {
     .sec1 {
         background-size: contain; /* Adjust background size for smaller screens */
     }
+
+    .container {
+        padding: 0 20px; /* Add padding to the container for smaller screens */
+    }
+
+    .nav-links li {
+        display: block; /* Display list items as block for smaller screens */
+        margin-left: 0; /* Remove margin between each link */
+    }
+
+    .nav-links li a {
+        display: block; /* Display links as block for smaller screens */
+        padding: 10px 0; /* Add padding to the links for smaller screens */
+    }
+
+    
 }
 
 
@@ -133,8 +149,12 @@ body, html {
 
 
 .footer {
-    background-color: #132c33; /* Dark blue color for the footer */
+    background-color: #031e25; /* Dark blue color for the footer */
     color: #fff; /* White text color */
+}
+
+.footer-bottom {
+    background-color: #031e25; /* Dark blue color for the footer bottom */
 }
 
 .footer h3 {
@@ -147,9 +167,7 @@ body, html {
     color: #ccc; /* Light gray text color for paragraph, contact list items, and social icons */
 }
 
-.footer-bottom {
-    background-color: #132c33; /* Dark blue color for the footer bottom */
-}
+
 
 
 .button-container {
