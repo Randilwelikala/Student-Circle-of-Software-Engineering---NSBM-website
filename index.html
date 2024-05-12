@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Game - Software Engineering Club NSBM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add responsive styles here */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 0 20px; /* Add padding to the container for smaller screens */
+            }
+
+            .nav-links li {
+                display: block; /* Display list items as block for smaller screens */
+                margin-left: 0; /* Remove margin between each link */
+            }
+
+            .nav-links li a {
+                display: block; /* Display links as block for smaller screens */
+                padding: 10px 0; /* Add padding to the links for smaller screens */
+            }
+
+            .sec1 {
+                background-size: contain; /* Adjust background size for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,11 +47,9 @@
             </div>
         </nav>
     </header>
-    
 
     <main>
         <section id="intro" class="sec1">
-            
             <h1>Welcome to "The Game"</h1>
             <p>Introduce the event here...</p>
         </section>
@@ -48,26 +70,62 @@
         </section>
 
         <section id="contact" class="sec5">
-            <h2>Contact Us</h2>
-            <p>Provide contact information...</p>
+            <div class="button-container">
+                <button class="registration-btn">Register Now</button>
+            </div>
+
+            
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 NSBM Software Engineering Club</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ligula non lectus semper feugiat. Sed ultricies libero at sapien pulvinar, vel aliquam velit pretium.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li><i class="fa fa-map-marker"></i> 123 Street Name, City, Country</li>
+                        <li><i class="fa fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fa fa-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 NSBM Software Engineering Club</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    
 
     <script>
         window.addEventListener('scroll', function() {
             var scrollPosition = window.scrollY;
             var section = document.getElementById('intro');
-            if (scrollPosition > 100) {
-                section.style.backgroundImage = "url('Images/new-background.jpg')";
+            if (scrollPosition > 248) {
+                section.style.backgroundImage = "url('Images/all.jpg')";
             } else {
-                section.style.backgroundImage = "url('Images/Selections.jpg')";
+                section.style.backgroundImage = "url('Images/us.jpg')";
             }
         });
     </script>
-
 </body>
 </html>

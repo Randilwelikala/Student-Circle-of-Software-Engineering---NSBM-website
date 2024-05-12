@@ -1,40 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .sec2, .sec3, .sec4, .sec5 {
+        padding: 60px 20px; /* Decrease padding for smaller screens */
+    }
+
+    .sec1 {
+        background-size: contain; /* Adjust background size for smaller screens */
+    }
+}
+
 .sec1 {
-    background-color: #0074D9; /* Blue background color for the intro section */
-    color: #fff; /* White text color */
-    padding: 50px; /* Add padding for spacing */
     
-
-    background-image: url('Images/Selections.jpg'); /* Initial background image */
+    background-image: url('Images/all.jpg'), url('Images/us.jpg');
     background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    color: #fff; /* White text color for better visibility */
-    padding: 100px 0; /* Add some padding to ensure content is visible */
-
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;    
+    height: 100vh; /* Set the height of the section to 100% of the viewport height */
 
 }
 
 .sec2 {
-    background-color: #555; /* Gray background color for the timelines section */
+    background-color: hsl(252, 69%, 10%); /* Gray background color for the timelines section */
     color: #fff; /* White text color */
-    padding: 50px; /* Add padding for spacing */
+    padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
 .sec3 {
-    background-color: #2ECC40; /* Green background color for the guidelines section */
+    background-color: #160542; /* Green background color for the guidelines section */
     color: #fff; /* White text color */
-    padding: 50px; /* Add padding for spacing */
+    padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
 .sec4 {
-    background-color: #FFDC00; /* Yellow background color for the partners section */
+    background-color: #06052e; /* Yellow background color for the partners section */
     color: #000; /* Black text color */
-    padding: 50px; /* Add padding for spacing */
+    padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
 .sec5 {
-    background-color: #FF851B; /* Orange background color for the contact section */
+    background-color: #0f0947; /* Orange background color for the contact section */
     color: #fff; /* White text color */
-    padding: 50px; /* Add padding for spacing */
+    padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
 .navbar {
@@ -48,6 +61,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 .logo h1 {
@@ -77,6 +92,7 @@
 .nav-links li a:hover {
     background-color: #555; /* Darker background color on hover */
 }
+
 
 
 #dynamic-image {
@@ -99,13 +115,6 @@
     z-index: 1000; /* Set a high z-index to ensure it's above other content */
 }
 
-.container {
-    max-width: 1200px; /* Set a max-width for the container to center the navbar */
-    margin: 0 auto; /* Center the container */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo h1 {
     color: #fff; /* White text color for the logo */
@@ -123,14 +132,46 @@
     margin-left: 20px; /* Add margin between each link */
 }
 
-.nav-links li a {
-    color: #fff; /* White text color for the links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Add padding to the links */
-    border-radius: 5px; /* Add some rounded corners */
-    transition: background-color 0.3s ease; /* Add smooth transition */
+
+.footer {
+    background-color: #132c33; /* Dark blue color for the footer */
+    color: #fff; /* White text color */
 }
 
-.nav-links li a:hover {
-    background-color: #555; /* Darker background color on hover */
+.footer h3 {
+    color: #fff; /* White text color for heading */
 }
+
+.footer p,
+.footer .contact-list li,
+.footer .social-icons li a {
+    color: #ccc; /* Light gray text color for paragraph, contact list items, and social icons */
+}
+
+.footer-bottom {
+    background-color: #132c33; /* Dark blue color for the footer bottom */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 11vh; /* Adjust height as needed */
+}
+
+.registration-btn {
+    background-color: #161a92; /* Green background color */
+    color: rgb(0, 0, 0); /* White text color */
+    padding: 20px 40px; /* Add padding to make the button bigger */
+    font-size: 24px; /* Increase font size */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add smooth transition */
+}
+
+.registration-btn:hover {
+    background-color: #5ba4e8; /* Darker green color on hover */
+}
+
