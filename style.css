@@ -241,6 +241,7 @@ body, html {
 .sec1 h1 {
     animation: fadeInUp 2s ease-in-out infinite; /* Infinite loop */
     margin-top: 250px; /* Adjust the margin as needed */
+    color: #b66262; /* Change to the desired color */
 }
 
 .animation-stopped .sec1 h1 {
