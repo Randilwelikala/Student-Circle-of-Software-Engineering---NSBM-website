@@ -14,6 +14,8 @@ body, html {
     }
 }
 
+
+
 .sec1 {
     
     background-image: url('Images/all.jpg'), url('Images/us.jpg');
@@ -39,21 +41,18 @@ body, html {
 }
 
 .sec4 {
-    background-color: #06052e; /* Yellow background color for the partners section */
+    background-color: hsl(252, 69%, 10%); /* Yellow background color for the partners section */
     color: #000; /* Black text color */
     padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
 .sec5 {
-    background-color: #0f0947; /* Orange background color for the contact section */
+    background-color: #160542; /* Orange background color for the contact section */
     color: #fff; /* White text color */
     padding: 80px 20px; /* Adjust padding to fit different screen sizes */
 }
 
-.navbar {
-    background-color: #333; /* Dark background color for the navbar */
-    padding: 20px 0; /* Add some padding to the top and bottom */
-}
+
 
 .container {
     max-width: 1200px; /* Set a max-width for the container to center the navbar */
@@ -107,7 +106,7 @@ body, html {
 }
 
 .navbar {
-    background-color: #333; /* Dark background color for the navbar */
+    background-color: #0c2a71; /* Dark background color for the navbar */
     padding: 20px 0; /* Add some padding to the top and bottom */
     position: fixed; /* Fix the navbar at the top of the viewport */
     width: 100%; /* Make the navbar span the entire width */
