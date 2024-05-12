@@ -148,14 +148,6 @@ body, html {
 }
 
 
-.footer {
-    background-color: #031e25; /* Dark blue color for the footer */
-    color: #fff; /* White text color */
-}
-
-.footer-bottom {
-    background-color: #031e25; /* Dark blue color for the footer bottom */
-}
 
 .footer h3 {
     color: #fff; /* White text color for heading */
@@ -166,6 +158,33 @@ body, html {
 .footer .social-icons li a {
     color: #ccc; /* Light gray text color for paragraph, contact list items, and social icons */
 }
+
+.footer {
+    background-color: #031e25; /* Dark blue color for the footer */
+    color: #fff; /* White text color */
+    padding: 50px 0; /* Add padding to the footer */
+}
+
+.social-media {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px; /* Add margin between each social media icon */
+}
+
+.social-media li:last-child {
+    margin-right: 0; /* Remove margin for the last social media icon */
+}
+
+.social-media img {
+    width: 40px; /* Adjust the width of the social media icons */
+    height: 40px; /* Adjust the height of the social media icons */
+}
+
 
 
 
