@@ -219,4 +219,32 @@ body, html {
 .registration-btn:hover {
     background-color: #5ba4e8; /* Darker green color on hover */
 }
+/* Define the animation */
+/* Define the animation */
+/* Define the animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px); /* Move slightly above */
+    }
+}
+
+/* Apply the animation to the heading */
+.sec1 h1 {
+    animation: fadeInUp 2s ease-in-out infinite; /* Infinite loop */
+    margin-top: 250px; /* Adjust the margin as needed */
+}
+
+.animation-stopped .sec1 h1 {
+    animation: none; /* Stop animation when class is added */
+}
+
 
